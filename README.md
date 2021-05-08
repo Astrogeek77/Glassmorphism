@@ -5,4 +5,5 @@
 | Projects      | Link          | 
 | ------------- |:-------------:|
 |  Glassmorphism Website | [demo](https://astrogeek77.github.io/Glassmorphism/Glass_morphisim_website/) |
-
+|  Glassmorphism Calendar | [demo](https://astrogeek77.github.io/Glassmorphism/Calender/) |
+|  Glassmorphism Digital Clock | [demo](https://astrogeek77.github.io/Glassmorphism/Digital%20Clock/) |
