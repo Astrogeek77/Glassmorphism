@@ -198,12 +198,15 @@ section .container .content a {
 @media (max-width: 992px) {
     section {
         padding: 50px 10px 10px;
+        width: 100%;
     }
 
     section .container {
         flex-direction: column !important;
         height: auto !important;
         padding: 20px !important;
+        width: 85vw;
+        margin-top: 30px;
     }
 
     section .container .content {
