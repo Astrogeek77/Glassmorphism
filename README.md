@@ -9,3 +9,4 @@
 |  Glassmorphism Digital Clock | [demo](https://astrogeek77.github.io/Glassmorphism/Digital%20Clock/) |
 |  Glassmorphism Website 2.0 | [demo](https://astrogeek77.github.io/Glassmorphism/Glass%20Website%202.0/) |
 |  Glassmorphism Form Validator | [demo](https://astrogeek77.github.io/Glassmorphism/form-validator/) |
+|  New Year's Eve countdown | [demo](https://astrogeek77.github.io/Glassmorphism/new-year-countdown/) |
