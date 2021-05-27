@@ -29,7 +29,7 @@ section::before {
     background: linear-gradient(#ffeb3b,
             #e91e63);
     border-radius: 50%;
-    animation: animate 30s infinite alternate;
+    animation: animate 30s infinite ease-in alternate;
     transform: translate(-420px, -180px);
 }
 
@@ -42,7 +42,7 @@ section::after {
             #83d8ff);
     border-radius: 50%;
     transform: translate(400px, 180px);
-    animation: animate 40s infinite alternate;
+    animation: animate 40s infinite ease-in alternate;
 }
 
 @keyframes animate {
