@@ -12,3 +12,4 @@
 |  New Year's Eve countdown | [demo](https://astrogeek77.github.io/Glassmorphism/new-year-countdown/) |
 |  Glass Contact Form | [demo](https://astrogeek77.github.io/Glassmorphism/Contact%20Form/) |
 |  Glass Battery Widget | [demo](https://astrogeek77.github.io/Glassmorphism/Battery%20widget/) |
+|  Glass Shutter Effect | [demo](https://astrogeek77.github.io/Glassmorphism/Glass%20Shutter%20Effect/) |
