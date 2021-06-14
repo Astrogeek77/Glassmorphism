@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Shutter Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Markup -->
+    <section>
+        <div class="container">
+            <h2 id="rangeValue">0</h2>
+            <div id="fillRangeTopLeft"></div>
+            <div id="fillRangeTopRight"></div>
+            <div id="fillRangeBottomLeft"></div>
+            <div id="fillRangeBottomRight"></div>
+            <input type="range" class="range" value="0" min="0" max="100" 
+            onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
+        </div>  
+        
+        <p class="helpText">Change the Slider Value to See the Effect.</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        const rangeValue = document.getElementById('rangeValue')
+        const topLeft = document.getElementById('fillRangeTopLeft')
+        const topRight = document.getElementById('fillRangeTopRight')
+        const BottomLeft = document.getElementById('fillRangeBottomLeft')
+        const BottomRight = document.getElementById('fillRangeBottomRight')
+
+
+        function rangeSlider(value){
+            rangeValue.innerHTML = value
+
+            topLeft.style.width = + value/2 + '%'
+            topRight.style.height = + value/2 + '%'
+            BottomLeft.style.height = + value/2 + '%'
+            BottomRight.style.width = + value/2 + '%'
+        }
+    </script>
+</body>
+</html>

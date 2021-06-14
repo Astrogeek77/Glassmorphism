@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --accent-color: #22ff08;
+    --background-color: #151515;
+
+    --animation: animate 15s ease-in infinite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--background-color);
+    position: relative;
+}
+
+section .container {
+    position: relative;
+}
+
+section .container #rangeValue {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    font-size: 13em;
+    color: var(--accent-color);
+    font-weight: 900;
+    z-index: 1;
+    animation: var(--animation);
+}
+
+section .container #rangeValue::after {
+    content: '%';
+
+}
+
+section .container .range {
+    position: relative;
+    width: 550px;
+    height: 30px;
+    appearance: none;
+    background: rgba(0, 0, 0, 0.8);
+    outline: none;
+    border-radius: 30px;
+    border: 2px solid #000;
+    box-shadow: 0 0 0 2px var(--background-color),
+    inset 0 0 5px #000;
+    z-index: 1;
+    overflow: hidden;
+    animation: var(--animation);
+}
+
+section .container .range::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: var(--accent-color);
+    cursor: pointer;
+    border: 10px solid #222;
+    border-radius: 50%;
+    box-shadow: -415px 0 0 400px var(--accent-color);
+    animation: var(--animation);
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+section .container #fillRangeTopLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    backdrop-filter: blur(15px);
+}
+
+section .container #fillRangeTopRight {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 2;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    backdrop-filter: blur(15px);
+}
+
+section .container #fillRangeBottomLeft {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    backdrop-filter: blur(15px);
+}
+
+section .container #fillRangeBottomRight {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    z-index: 2;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    backdrop-filter: blur(15px);
+}
+
+.helpText {
+    position: fixed;
+    bottom: 30px;
+    color: #fff;
+    font-size: 1.2em;
+    z-index: 100;
+    user-select: none;
+}
