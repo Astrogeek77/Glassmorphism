@@ -15,6 +15,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    transition: 0.5s;
 }
 
 section.dark {
@@ -31,6 +32,7 @@ section::before {
     border-radius: 50%;
     transform: translate(-150px, -100px);
     animation: animate 40s ease-in infinite;
+    transition: 0.5s;
 }
 
 section.dark::before {
@@ -49,6 +51,7 @@ section::after {
     border-radius: 50%;
     transform: translate(150px, 150px);
     animation: animate 40s ease-in infinite;
+    transition: 0.5s;
 }
 
 section.dark::after {
@@ -100,6 +103,7 @@ section .box .content h3 {
     font-weight: 500;
     font-size: 1.2rem;
     letter-spacing: 1px;
+    transition: 0.5s;
 }
 
 section.dark .box .content .batteryShape {
@@ -113,6 +117,7 @@ section .box .content .batteryShape {
     margin: 20px 0;
     border: 3px solid #333;
     border-radius: 10px;
+    transition: 0.5s;
     /* overflow: hidden; */
 }
 
@@ -127,6 +132,7 @@ section .box .content .batteryShape::before {
     background: #333;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    transition: 0.5s;
 }
 
 section.dark .box .content .batteryShape::before {
@@ -141,6 +147,7 @@ section .box .content .batteryShape::after {
     width: 100%;
     height: 50%;
     background: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
 
 }
 
@@ -176,6 +183,7 @@ section .box .content .percent {
     color: #fe3177;
     font-size: 2em;
     font-weight: 700;
+    transition: 0.5s;
 }
 
 section.dark .box .content .percent {
@@ -194,6 +202,7 @@ section.dark .box .content .percent {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .dark .toggle {
@@ -212,6 +221,7 @@ section.dark .box .content .percent {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .dark .toggle::before {
